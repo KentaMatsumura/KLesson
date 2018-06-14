@@ -38,8 +38,8 @@ for k in range(8):
 
 # ユークリッド距離の最小を抽出
 for i in range(8):
-    summin = np.argmin(sumlist2[i])
     #最小値が０の場合、それを1000にする
     sumlist2[i,i]=1000
+    summin = np.argmin(sumlist2[i])
     #ユークリッド距離が最も小さい組み合わせとその値を表示
     print("data",i,".csv  ->","data",summin,".csv", sumlist2[i,summin])
